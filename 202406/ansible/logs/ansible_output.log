@@ -1,0 +1,79 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-15 01:52:22,103 p=2357 u=martinez n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-15 01:52:22,240 p=2357 u=martinez n=ansible | PLAY [all] **************************************************************************************************************
+2024-11-15 01:52:22,248 p=2357 u=martinez n=ansible | TASK [Gathering Facts] **************************************************************************************************
+2024-11-15 01:52:22,345 p=2357 u=martinez n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nmartinez@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-15 01:52:23,173 p=2357 u=martinez n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but
+future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-15 01:52:23,173 p=2357 u=martinez n=ansible | ok: [localhost]
+2024-11-15 01:52:23,179 p=2357 u=martinez n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************
+2024-11-15 01:52:23,200 p=2357 u=martinez n=ansible | included: 2do_parcial for localhost
+2024-11-15 01:52:23,205 p=2357 u=martinez n=ansible | TASK [2do_parcial : Generar estructura de directorios alumno] ***********************************************************
+2024-11-15 01:52:23,331 p=2357 u=martinez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-15 01:52:23,331 p=2357 u=martinez n=ansible | PLAY RECAP **************************************************************************************************************
+2024-11-15 01:52:23,332 p=2357 u=martinez n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-15 01:52:23,332 p=2357 u=martinez n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-15 02:04:52,109 p=2651 u=martinez n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-15 02:04:52,197 p=2651 u=martinez n=ansible | PLAY [all] ***********************************************************************************************************************************
+2024-11-15 02:04:52,202 p=2651 u=martinez n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************
+2024-11-15 02:04:52,292 p=2651 u=martinez n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nmartinez@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-15 02:04:53,121 p=2651 u=martinez n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of
+another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-15 02:04:53,122 p=2651 u=martinez n=ansible | ok: [localhost]
+2024-11-15 02:04:53,128 p=2651 u=martinez n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************
+2024-11-15 02:04:53,146 p=2651 u=martinez n=ansible | included: 2do_parcial for localhost
+2024-11-15 02:04:53,151 p=2651 u=martinez n=ansible | TASK [2do_parcial : Generar estructura de directorios alumno] ********************************************************************************
+2024-11-15 02:04:53,276 p=2651 u=martinez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-15 02:04:53,277 p=2651 u=martinez n=ansible | PLAY RECAP ***********************************************************************************************************************************
+2024-11-15 02:04:53,277 p=2651 u=martinez n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-15 02:04:53,277 p=2651 u=martinez n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-15 02:27:05,987 p=3042 u=martinez n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-15 02:27:06,074 p=3042 u=martinez n=ansible | PLAY [all] *************************************************************************************************************************************
+2024-11-15 02:27:06,078 p=3042 u=martinez n=ansible | TASK [Gathering Facts] *************************************************************************************************************************
+2024-11-15 02:27:06,215 p=3042 u=martinez n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nmartinez@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-15 02:27:06,944 p=3042 u=martinez n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of
+another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-15 02:27:06,945 p=3042 u=martinez n=ansible | ok: [localhost]
+2024-11-15 02:27:06,950 p=3042 u=martinez n=ansible | TASK [include_role : 2do_parcial] **************************************************************************************************************
+2024-11-15 02:27:06,969 p=3042 u=martinez n=ansible | included: 2do_parcial for localhost
+2024-11-15 02:27:06,974 p=3042 u=martinez n=ansible | TASK [2do_parcial : Generar estructura de directorios alumno] **********************************************************************************
+2024-11-15 02:27:07,210 p=3042 u=martinez n=ansible | changed: [localhost]
+2024-11-15 02:27:07,216 p=3042 u=martinez n=ansible | TASK [2do_parcial : Generar estructura de directorios equipo] **********************************************************************************
+2024-11-15 02:27:07,368 p=3042 u=martinez n=ansible | changed: [localhost]
+2024-11-15 02:27:07,374 p=3042 u=martinez n=ansible | TASK [2do_parcial : Generar archivo datos_alumno.txt] ******************************************************************************************
+2024-11-15 02:27:07,792 p=3042 u=martinez n=ansible | changed: [localhost]
+2024-11-15 02:27:07,797 p=3042 u=martinez n=ansible | TASK [2do_parcial : Generar archivo datos_equipo.txt] ******************************************************************************************
+2024-11-15 02:27:08,100 p=3042 u=martinez n=ansible | changed: [localhost]
+2024-11-15 02:27:08,105 p=3042 u=martinez n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores no requiera contraseña] ****************************************************
+2024-11-15 02:27:08,352 p=3042 u=martinez n=ansible | changed: [localhost]
+2024-11-15 02:27:08,362 p=3042 u=martinez n=ansible | TASK [Otra tarea] ******************************************************************************************************************************
+2024-11-15 02:27:08,372 p=3042 u=martinez n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-15 02:27:08,373 p=3042 u=martinez n=ansible | PLAY RECAP *************************************************************************************************************************************
+2024-11-15 02:27:08,373 p=3042 u=martinez n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-15 02:27:08,374 p=3042 u=martinez n=ansible | localhost                  : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
